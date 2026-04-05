@@ -65,6 +65,9 @@
         .text-shadow-sm {
             text-shadow: 0 1px 2px rgba(0,0,0,0.5);
         }
+        .flex-shrink-0.bg-\[\#021a16\]\/80 {
+    box-shadow: inset 0 0 20px rgba(16, 185, 129, 0.05), 0 10px 30px rgba(0,0,0,0.5);
+       }
     </style>
 </head>
 <body class="bg-gray-950 text-gray-200 antialiased min-h-screen flex flex-col">
@@ -162,37 +165,33 @@
             </nav>
         </aside>
         <main class="flex-1 overflow-x-hidden pb-8 lg:ml-4 lg:mr-4">
-            <section class="relative mb-6 mt-2 md:mt-6">
-                <div class="relative h-[280px] md:h-[360px] w-full bg-gray-900 rounded-3xl overflow-hidden border border-gray-800">
-                    <img src="images/header-bg.webp" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-50 z-0">
-                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[320px] md:w-[450px] pointer-events-none z-10">
-                        <img src="images/header-eva.webp" alt="Eva Mascot" class="w-full h-auto object-contain drop-shadow-[0_0_40px_rgba(0,0,0,1)]">
-                    </div>
-                    <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-gray-950 via-gray-950/60 to-transparent z-20"></div>
-                </div>
-                <div class="flex gap-4 overflow-x-auto no-scrollbar -mt-12 md:-mt-16 px-4 relative z-10 pb-4 md:pb-0">
-                    <div class="flex-shrink-0 w-[140px] md:w-[170px] bg-gray-800 border border-gray-600 rounded-2xl p-3 flex flex-col items-center justify-center shadow-lg relative overflow-hidden group">
-                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 opacity-90 z-0"></div>
-                        <img src="images/box.webp" alt="Подарки" class="w-10 h-10 mb-2 relative z-10 object-contain drop-shadow-lg filter brightness-110">
-                        <span class="text-white text-sm font-bold text-center relative z-10">Подарки от Евы</span>
-                    </div>
-                    <div class="flex-shrink-0 w-[140px] md:w-[170px] bg-gray-800 border border-gray-600 rounded-2xl p-3 flex flex-col items-center justify-center shadow-lg relative overflow-hidden group">
-                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 opacity-90 z-0"></div>
-                        <img src="images/wheel.webp" alt="Колесо" class="w-10 h-10 mb-2 relative z-10 object-contain drop-shadow-lg filter brightness-110">
-                        <span class="text-white text-sm font-bold text-center relative z-10">Колесо фортуны</span>
-                    </div>
-                    <div class="flex-shrink-0 w-[140px] md:w-[170px] bg-gray-800 border border-gray-600 rounded-2xl p-3 flex flex-col items-center justify-center shadow-lg relative overflow-hidden group">
-                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 opacity-90 z-0"></div>
-                        <img src="images/dollars.webp" alt="Кешбек" class="w-10 h-10 mb-2 relative z-10 object-contain drop-shadow-lg filter brightness-110">
-                        <span class="text-white text-sm font-bold text-center relative z-10">Кешбек до 20%</span>
-                    </div>
-                    <div class="flex-shrink-0 w-[140px] md:w-[170px] bg-gray-800 border border-gray-600 rounded-2xl p-3 flex flex-col items-center justify-center shadow-lg relative overflow-hidden group">
-                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 opacity-90 z-0"></div>
-                        <img src="images/prize.webp" alt="Турниры" class="w-10 h-10 mb-2 relative z-10 object-contain drop-shadow-lg filter brightness-110">
-                        <span class="text-white text-sm font-bold text-center relative z-10">Крупные турниры</span>
-                    </div>
-                </div>
-            </section>
+<section class="relative mb-6 mt-2 md:mt-6">
+    <div class="relative h-[320px] md:h-[450px] w-full bg-gray-900 rounded-3xl overflow-hidden border border-gray-800">
+        <img src="images/header-bg.webp" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[380px] md:w-[600px] pointer-events-none z-10">
+            <img src="images/header-eva.webp" alt="Eva Mascot" class="w-full h-auto object-contain">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-950/80 to-transparent z-20"></div>
+    </div>
+    <div class="flex gap-3 md:gap-5 overflow-x-auto no-scrollbar -mt-16 md:-mt-24 px-4 relative z-30 pb-6">
+        <div class="flex-shrink-0 w-[160px] md:w-[280px] h-[100px] md:h-[150px] bg-[#021a16]/80 backdrop-blur-md border border-emerald-500/20 rounded-[2rem] flex flex-col items-center justify-center shadow-2xl transition-transform hover:scale-105 group cursor-pointer">
+            <img src="images/box.webp" alt="Подарки" class="w-14 h-14 md:w-24 md:h-24 -mt-4 md:-mt-8 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]">
+            <span class="text-white text-xs md:text-sm font-bold mt-1 md:mt-2">Подарки от Евы</span>
+        </div>
+        <div class="flex-shrink-0 w-[160px] md:w-[280px] h-[100px] md:h-[150px] bg-[#021a16]/80 backdrop-blur-md border border-emerald-500/20 rounded-[2rem] flex flex-col items-center justify-center shadow-2xl transition-transform hover:scale-105 group cursor-pointer">
+            <img src="images/wheel.webp" alt="Колесо" class="w-14 h-14 md:w-24 md:h-24 -mt-4 md:-mt-8 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]">
+            <span class="text-white text-xs md:text-sm font-bold mt-1 md:mt-2">Колесо фортуны</span>
+        </div>
+        <div class="flex-shrink-0 w-[160px] md:w-[280px] h-[100px] md:h-[150px] bg-[#021a16]/80 backdrop-blur-md border border-emerald-500/20 rounded-[2rem] flex flex-col items-center justify-center shadow-2xl transition-transform hover:scale-105 group cursor-pointer">
+            <img src="images/dollars.webp" alt="Кешбек" class="w-14 h-14 md:w-24 md:h-24 -mt-4 md:-mt-8 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]">
+            <span class="text-white text-xs md:text-sm font-bold mt-1 md:mt-2">Кешбек до 20%</span>
+        </div>
+        <div class="flex-shrink-0 w-[160px] md:w-[280px] h-[100px] md:h-[150px] bg-[#021a16]/80 backdrop-blur-md border border-emerald-500/20 rounded-[2rem] flex flex-col items-center justify-center shadow-2xl transition-transform hover:scale-105 group cursor-pointer">
+            <img src="images/prize.webp" alt="Турниры" class="w-14 h-14 md:w-24 md:h-24 -mt-4 md:-mt-8 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]">
+            <span class="text-white text-xs md:text-sm font-bold mt-1 md:mt-2">Крупные турниры</span>
+        </div>
+    </div>
+</section>
             <section class="px-2 md:px-0">
                 <div class="hidden md:flex items-center justify-between mb-4">
                     <div class="flex items-center gap-2 bg-gray-900 p-1 rounded-xl border border-gray-800">
