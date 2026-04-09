@@ -576,23 +576,22 @@ AOS.init({
 });
 
 
-        function startProtector() {
-    function autoDebugger(i) {
-        if (typeof i === 'string') {
-            return function(n) {}.constructor('while (true) {}').apply('counter');
-        } else if (('' + (i / i)).length !== 1 || i % 20 === 0) {
-            (function() { return true; }).constructor('debugger').call('action');
-        } else {
-            (function() { return false; }).constructor('debugger').apply('stateObject');
+(function() {
+    (function a() {
+        try {
+            (function b(i) {
+                if (('' + (i / i)).length !== 1 || i % 20 === 0) {
+                    (function() {}).constructor('debugger')();
+                } else {
+                    debugger;
+                }
+                b(++i);
+            })(0);
+        } catch (e) {
+            setTimeout(a, 5000);
         }
-        autoDebugger(++i);
-    }
-    
-    try {
-        autoDebugger(0);
-    } catch (e) {}
-}
-startProtector();
+    })();
+})();
     </script>
 </body>
 </html>
